@@ -1,6 +1,6 @@
 # naavre_communicator
 
-[![Github Actions Status](/workflows/Build/badge.svg)](/actions/workflows/build.yml)
+[![Github Actions Status](/actions/workflows/build.yml/badge.svg)](/actions/workflows/build.yml)
 
 Communicate with NaaVRE services
 
