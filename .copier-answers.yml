@@ -9,6 +9,6 @@ kind: server
 labextension_name: naavre-communicator
 project_short_description: Communicate with NaaVRE services
 python_name: naavre_communicator
-repository: https://github.com/QCDIS/NaaVRE-extension-framework
+repository: https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab
 test: true
 
