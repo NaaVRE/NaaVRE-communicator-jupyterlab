@@ -11,6 +11,11 @@ class OAuthToken:
     _verify_ssl = os.getenv('VRE_API_VERIFY_SSL', 'true').lower() != 'false'
 
     @classmethod
+    def _load_tokens_from_env(cls):
+        cls._access_token = os.getenv('OAUTH_ACCESS_TOKEN')
+        cls._refresh_token = os.getenv('OAUTH_REFRESH_TOKEN')
+
+    @classmethod
     def _parse_token(cls, token):
         return jwt.decode(token, options={"verify_signature": False})
 
@@ -59,6 +64,7 @@ class OAuthToken:
 
     @classmethod
     def get_access_token(cls):
+        cls._load_tokens_from_env()
         if cls._token_needs_renewal(cls._access_token):
             cls._renew_tokens()
         return cls._access_token
