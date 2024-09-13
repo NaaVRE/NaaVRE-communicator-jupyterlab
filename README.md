@@ -1,6 +1,6 @@
 # naavre_communicator
 
-[![Github Actions Status](./actions/workflows/build.yml/badge.svg)](./actions/workflows/build.yml)
+[![Github Actions Status](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/actions/workflows/build.yml/badge.svg)](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/actions/workflows/build.yml)
 
 Communicate with NaaVRE services
 
