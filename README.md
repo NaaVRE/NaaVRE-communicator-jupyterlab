@@ -1,11 +1,11 @@
-# naavre_communicator
+# NaaVRE_communicator_jupyterlab
 
-[![Github Actions Status](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/actions/workflows/build.yml/badge.svg)](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/actions/workflows/build.yml)
+[![Github Actions Status](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/workflows/Build/badge.svg)](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/actions/workflows/build.yml)
 
-Communicate with NaaVRE services
+Communication gateway for NaaVRE JupyterLab extensions
 
-This extension is composed of a Python package named `naavre_communicator`
-for the server extension and a NPM package named `naavre-communicator`
+This extension is composed of a Python package named `NaaVRE_communicator_jupyterlab`
+for the server extension and a NPM package named `@naavre/communicator-jupyterlab`
 for the frontend extension.
 
 ## Requirements
@@ -17,7 +17,7 @@ for the frontend extension.
 To install the extension, execute:
 
 ```bash
-pip install naavre_communicator
+pip install NaaVRE_communicator_jupyterlab
 ```
 
 ## Uninstall
@@ -25,7 +25,7 @@ pip install naavre_communicator
 To remove the extension, execute:
 
 ```bash
-pip uninstall naavre_communicator
+pip uninstall NaaVRE_communicator_jupyterlab
 ```
 
 ## Troubleshoot
@@ -56,13 +56,13 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the naavre_communicator directory
+# Change directory to the NaaVRE_communicator_jupyterlab directory
 # Install package in development mode
 pip install -e ".[test]"
 # Link your development version of the extension with JupyterLab
 jupyter labextension develop . --overwrite
 # Server extension must be manually installed in develop mode
-jupyter server extension enable naavre_communicator
+jupyter server extension enable NaaVRE_communicator_jupyterlab
 # Rebuild extension Typescript source after making changes
 jlpm build
 ```
@@ -88,13 +88,13 @@ jupyter lab build --minimize=False
 
 ```bash
 # Server extension must be manually disabled in develop mode
-jupyter server extension disable naavre_communicator
-pip uninstall naavre_communicator
+jupyter server extension disable NaaVRE_communicator_jupyterlab
+pip uninstall NaaVRE_communicator_jupyterlab
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `naavre-communicator` within that folder.
+folder is located. Then you can remove the symlink named `@naavre/communicator-jupyterlab` within that folder.
 
 ### Testing the extension
 
@@ -113,7 +113,7 @@ jupyter labextension develop . --overwrite
 To execute them, run:
 
 ```sh
-pytest -vv -r ap --cov naavre_communicator
+pytest -vv -r ap --cov NaaVRE_communicator_jupyterlab
 ```
 
 #### Frontend tests

@@ -5,7 +5,7 @@ except ImportError:
     # in editable mode with pip. It is highly recommended to install
     # the package from a stable release or in editable mode: https://pip.pypa.io/en/stable/topics/local-project-installs/#editable-installs
     import warnings
-    warnings.warn("Importing 'naavre_communicator' outside a proper installation.")
+    warnings.warn("Importing 'NaaVRE_communicator_jupyterlab' outside a proper installation.")
     __version__ = "dev"
 from .handlers import setup_handlers
 
@@ -13,13 +13,13 @@ from .handlers import setup_handlers
 def _jupyter_labextension_paths():
     return [{
         "src": "labextension",
-        "dest": "naavre-communicator"
+        "dest": "@naavre/communicator-jupyterlab"
     }]
 
 
 def _jupyter_server_extension_points():
     return [{
-        "module": "naavre_communicator"
+        "module": "NaaVRE_communicator_jupyterlab"
     }]
 
 
@@ -32,5 +32,5 @@ def _load_jupyter_server_extension(server_app):
         JupyterLab application instance
     """
     setup_handlers(server_app.web_app)
-    name = "naavre_communicator"
+    name = "NaaVRE_communicator_jupyterlab"
     server_app.log.info(f"Registered {name} server extension")
