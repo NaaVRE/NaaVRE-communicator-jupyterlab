@@ -11,7 +11,9 @@ const plugin: JupyterFrontEndPlugin<void> = {
   description: 'Communication gateway for NaaVRE JupyterLab extensions',
   autoStart: true,
   activate: (app: JupyterFrontEnd) => {
-    console.log('JupyterLab extension @naavre/communicator-jupyterlab is activated!');
+    console.log(
+      'JupyterLab extension @naavre/communicator-jupyterlab is activated!'
+    );
   }
 };
 
