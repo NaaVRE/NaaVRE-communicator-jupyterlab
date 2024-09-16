@@ -1,14 +1,19 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v4.3.4
+_commit: v4.3.5
 _src_path: https://github.com/jupyterlab/extension-template
 author_email: gabriel.pelouze@lifewatch.eu
-author_name: NaaVRE communicator
+author_name: LifeWatch ERIC VLIC & QCDIS team at University of Amsterdam
+data_format: string
+file_extension: ''
 has_binder: false
 has_settings: false
 kind: server
-labextension_name: naavre-communicator
-project_short_description: Communicate with NaaVRE services
-python_name: naavre_communicator
+labextension_name: '@naavre/communicator-jupyterlab'
+mimetype: ''
+mimetype_name: ''
+project_short_description: Communication gateway for NaaVRE JupyterLab extensions
+python_name: NaaVRE_communicator_jupyterlab
 repository: https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab
 test: true
+viewer_name: ''
 

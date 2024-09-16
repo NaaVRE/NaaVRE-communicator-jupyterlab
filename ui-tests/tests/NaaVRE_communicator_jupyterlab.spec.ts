@@ -17,7 +17,9 @@ test('should emit an activation console message', async ({ page }) => {
 
   expect(
     logs.filter(
-      s => s === 'JupyterLab extension naavre-communicator is activated!'
+      s =>
+        s ===
+        'JupyterLab extension @naavre/communicator-jupyterlab is activated!'
     )
   ).toHaveLength(1);
 });

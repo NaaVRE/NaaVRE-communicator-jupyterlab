@@ -1,7 +1,7 @@
 {
   "ServerApp": {
     "jpserver_extensions": {
-      "naavre_communicator": true
+      "NaaVRE_communicator_jupyterlab": true
     }
   }
 }

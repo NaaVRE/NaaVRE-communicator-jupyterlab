@@ -4,14 +4,16 @@ import {
 } from '@jupyterlab/application';
 
 /**
- * Initialization data for the naavre-communicator extension.
+ * Initialization data for the @naavre/communicator-jupyterlab extension.
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'naavre-communicator:plugin',
-  description: 'Communicate with NaaVRE services',
+  id: '@naavre/communicator-jupyterlab:plugin',
+  description: 'Communication gateway for NaaVRE JupyterLab extensions',
   autoStart: true,
   activate: (app: JupyterFrontEnd) => {
-    console.log('JupyterLab extension naavre-communicator is activated!');
+    console.log(
+      'JupyterLab extension @naavre/communicator-jupyterlab is activated!'
+    );
   }
 };
 

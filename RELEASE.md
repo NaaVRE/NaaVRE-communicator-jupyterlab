@@ -1,4 +1,4 @@
-# Making a new release of naavre_communicator
+# Making a new release of NaaVRE_communicator_jupyterlab
 
 The extension can be published to `PyPI` and `npm` manually or using the [Jupyter Releaser](https://github.com/jupyter-server/jupyter_releaser).
 

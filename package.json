@@ -1,7 +1,7 @@
 {
-    "name": "naavre-communicator",
-    "version": "0.1.1",
-    "description": "Communicate with NaaVRE services",
+    "name": "@naavre/communicator-jupyterlab",
+    "version": "0.1.0",
+    "description": "Communication gateway for NaaVRE JupyterLab extensions",
     "keywords": [
         "jupyter",
         "jupyterlab",
@@ -11,9 +11,9 @@
     "bugs": {
         "url": "https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/issues"
     },
-    "license": "BSD-3-Clause",
+    "license": "Apache-2.0",
     "author": {
-        "name": "NaaVRE communicator",
+        "name": "LifeWatch ERIC VLIC & QCDIS team at University of Amsterdam",
         "email": "gabriel.pelouze@lifewatch.eu"
     },
     "files": [
@@ -38,7 +38,7 @@
         "clean": "jlpm clean:lib",
         "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
         "clean:lintcache": "rimraf .eslintcache .stylelintcache",
-        "clean:labextension": "rimraf naavre_communicator/labextension naavre_communicator/_version.py",
+        "clean:labextension": "rimraf NaaVRE_communicator_jupyterlab/labextension NaaVRE_communicator_jupyterlab/_version.py",
         "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
         "eslint": "jlpm eslint:check --fix",
         "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -103,12 +103,12 @@
                     "pip"
                 ],
                 "base": {
-                    "name": "naavre_communicator"
+                    "name": "NaaVRE_communicator_jupyterlab"
                 }
             }
         },
         "extension": true,
-        "outputDir": "naavre_communicator/labextension"
+        "outputDir": "NaaVRE_communicator_jupyterlab/labextension"
     },
     "eslintIgnore": [
         "node_modules",
