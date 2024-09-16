@@ -60,7 +60,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: extension-artifacts
-        path: dist/NaaVRE_communicator_jupyterlab*
+        path: dist/naavre_communicator_jupyterlab*
         if-no-files-found: error
 
   test_isolated:
