@@ -78,7 +78,7 @@ class ExternalServiceHandler(APIHandler):
             method,
             url,
             headers=headers,
-            data=data,
+            json=data,
             verify=self._vre_api_verify_ssl,
             )
 
