@@ -2,6 +2,22 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.2.0
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.1.1...cf8f6861ac09419cd843833e8ea93256fe2fa7a6))
+
+### Bugs fixed
+
+- fix #4 [#5](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/5) ([@gpelouze](https://github.com/gpelouze))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2024-09-16&to=2025-01-19&type=c))
+
+[@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2024-09-16..2025-01-19&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.1.1
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/05bb3198983ba655727e08b16282ff9b9c60b4cc...829e31b7973d0a440a1afca93dc2173d618f662c))
@@ -20,5 +36,3 @@
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2024-08-22&to=2024-09-16&type=c))
 
 [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2024-08-22..2024-09-16&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
