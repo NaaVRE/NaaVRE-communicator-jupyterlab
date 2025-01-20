@@ -1,6 +1,5 @@
 from urllib.parse import urlparse
 import json
-import logging
 import os
 
 from jupyter_server.base.handlers import APIHandler
@@ -11,8 +10,6 @@ import tornado
 
 from .utils.oauth_token import OAuthToken
 
-logger = logging.getLogger()
-
 
 class ExternalServiceHandler(APIHandler):
 
@@ -20,8 +17,7 @@ class ExternalServiceHandler(APIHandler):
     def _vre_api_verify_ssl(self):
         return os.getenv('VRE_API_VERIFY_SSL', 'true').lower() != 'false'
 
-    @staticmethod
-    def domain_is_allowed(url):
+    def domain_is_allowed(self, url):
         """ Verify that the URL domain is allowed
 
         Allowed domains are set as a comma-separated list through environment
@@ -31,7 +27,15 @@ class ExternalServiceHandler(APIHandler):
         NAAVRE_ALLOWED_DOMAINS="my-domain.tld,my-other-domain.tld"
         NAAVRE_ALLOWED_DOMAINS="*"
         """
-        allowed_domains = os.getenv('NAAVRE_ALLOWED_DOMAINS').split(',')
+        allowed_domains = os.getenv('NAAVRE_ALLOWED_DOMAINS')
+        if allowed_domains is None:
+            msg = (
+                'Environment variable NAAVRE_ALLOWED_DOMAINS is not set. '
+                'No requests will be allowed. '
+                )
+            self.log.warning(msg)
+            return False
+        allowed_domains = allowed_domains.split(',')
         if '*' in allowed_domains:
             return True
         else:
@@ -72,7 +76,7 @@ class ExternalServiceHandler(APIHandler):
         try:
             self.add_auth(headers)
         except jwt.exceptions.DecodeError:
-            raise tornado.web.HTTPError(500, 'Could not decode JWT')
+            raise tornado.web.HTTPError(401, 'Could not decode JWT')
 
         req = requests.request(
             method,
