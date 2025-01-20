@@ -2,6 +2,22 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.2.1
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.0...20bfae5f8a8f28d6737450b666618bde13d0d5db))
+
+### Enhancements made
+
+- gracefully handle wrong or missing environment variables [#7](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/7) ([@gpelouze](https://github.com/gpelouze))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-01-19&to=2025-01-20&type=c))
+
+[@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-01-19..2025-01-20&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.2.0
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.1.1...cf8f6861ac09419cd843833e8ea93256fe2fa7a6))
@@ -15,8 +31,6 @@
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2024-09-16&to=2025-01-19&type=c))
 
 [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2024-09-16..2025-01-19&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.1.1
 
