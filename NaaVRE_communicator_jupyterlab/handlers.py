@@ -4,8 +4,8 @@ import os
 
 from jupyter_server.base.handlers import APIHandler
 from jupyter_server.utils import url_path_join
+import httpx
 import jwt
-import requests
 import tornado
 
 from .utils.oauth_token import OAuthToken
@@ -49,7 +49,7 @@ class ExternalServiceHandler(APIHandler):
         headers['Authorization'] = f'Bearer {token}'
 
     @tornado.web.authenticated
-    def post(self):
+    async def post(self):
         payload = self.get_json_body()
 
         try:
@@ -78,17 +78,17 @@ class ExternalServiceHandler(APIHandler):
         except jwt.exceptions.DecodeError:
             raise tornado.web.HTTPError(401, 'Could not decode JWT')
 
-        req = requests.request(
-            method,
-            url,
-            headers=headers,
-            json=data,
-            verify=self._vre_api_verify_ssl,
-            )
+        async with httpx.AsyncClient(timeout=None, verify=self._vre_api_verify_ssl) as client:
+            req = await client.request(
+                method,
+                url,
+                headers=headers,
+                json=data,
+                )
 
-        self.finish(json.dumps({
+        await self.finish(json.dumps({
             'status_code': req.status_code,
-            'reason': req.reason,
+            'reason': req.reason_phrase,
             'headers': dict(req.headers),
             'content': req.text,
             }))
