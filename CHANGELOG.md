@@ -2,6 +2,26 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.2.2
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.1...a1e3d1306aa8c900e8044e92bf4e422226763284))
+
+### Bugs fixed
+
+- make http requests to external service async [#10](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/10) ([@gpelouze](https://github.com/gpelouze))
+
+### Documentation improvements
+
+- Add github workflow add-issue-to-projects-overview.yaml [#8](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/8) ([@KoenGreuell](https://github.com/KoenGreuell))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-01-20&to=2025-02-21&type=c))
+
+[@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-01-20..2025-02-21&type=Issues) | [@KoenGreuell](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3AKoenGreuell+updated%3A2025-01-20..2025-02-21&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.2.1
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.0...20bfae5f8a8f28d6737450b666618bde13d0d5db))
@@ -15,8 +35,6 @@
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-01-19&to=2025-01-20&type=c))
 
 [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-01-19..2025-01-20&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.2.0
 
