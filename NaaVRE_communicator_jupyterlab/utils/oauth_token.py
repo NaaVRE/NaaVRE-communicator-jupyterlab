@@ -44,11 +44,15 @@ class OAuthToken:
         return openid_configuration['token_endpoint']
 
     @classmethod
+    def _get_client_id(cls):
+        return cls._parse_token(cls._refresh_token).get('azp')
+
+    @classmethod
     def _renew_tokens(cls):
         r = requests.post(
             cls._get_token_endpoint(),
             data={
-                'client_id': 'naavre',
+                'client_id': cls._get_client_id(),
                 'grant_type': 'refresh_token',
                 'refresh_token': cls._refresh_token,
                 },
