@@ -18,6 +18,7 @@ def jp_server_config(jp_server_config):
 def set_env():
     os.environ["VRE_API_VERIFY_SSL"] = "true"
     os.environ["NAAVRE_ALLOWED_DOMAINS"] = "*"
+    os.environ["NAAVRE_LOG_QUERIES"] = ""
     os.environ["OAUTH_ACCESS_TOKEN"] = ""
     os.environ["OAUTH_REFRESH_TOKEN"] = ""
 

@@ -1,6 +1,8 @@
 from urllib.parse import urlparse
 import json
 import os
+import random
+import string
 
 from jupyter_server.base.handlers import APIHandler
 from jupyter_server.utils import url_path_join
@@ -16,6 +18,10 @@ class ExternalServiceHandler(APIHandler):
     @property
     def _vre_api_verify_ssl(self):
         return os.getenv('VRE_API_VERIFY_SSL', 'true').lower() != 'false'
+
+    @property
+    def _naavre_log_queries(self):
+        return os.getenv('NAAVRE_LOG_QUERIES', 'false').lower() == 'true'
 
     def domain_is_allowed(self, url):
         """ Verify that the URL domain is allowed
@@ -48,9 +54,26 @@ class ExternalServiceHandler(APIHandler):
         token = OAuthToken.get_access_token()
         headers['Authorization'] = f'Bearer {token}'
 
+    @staticmethod
+    def _generate_log_id():
+        return ''.join(random.sample(string.ascii_lowercase + string.ascii_uppercase, 10))
+
+    def _get_query_logger(self):
+        if self._naavre_log_queries:
+            log_id = self._generate_log_id()
+            def logger(msg):
+                self.log.info(f'NaaVRE-communicator {log_id} {msg}')
+        else:
+            def logger(msg):
+                pass
+        return logger
+
     @tornado.web.authenticated
     async def post(self):
         payload = self.get_json_body()
+
+        query_logger = self._get_query_logger()
+        query_logger(f'query: {payload}')
 
         try:
             query = payload['query']
@@ -86,12 +109,16 @@ class ExternalServiceHandler(APIHandler):
                 json=data,
                 )
 
-        await self.finish(json.dumps({
+        response = json.dumps({
             'status_code': req.status_code,
             'reason': req.reason_phrase,
             'headers': dict(req.headers),
             'content': req.text,
-            }))
+            })
+
+        query_logger(f'response: {response}')
+
+        await self.finish(response)
 
 
 def setup_handlers(web_app):
