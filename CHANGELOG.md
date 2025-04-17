@@ -2,6 +2,26 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.2.3
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.2...40e391e1724d991d779576ec02c47c8fb30cd137))
+
+### Enhancements made
+
+- Add query logging [#13](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/13) ([@gpelouze](https://github.com/gpelouze))
+
+### Bugs fixed
+
+- Read client ID from JWT [#12](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/12) ([@gpelouze](https://github.com/gpelouze))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-02-21&to=2025-04-17&type=c))
+
+[@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-02-21..2025-04-17&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.2.2
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.1...a1e3d1306aa8c900e8044e92bf4e422226763284))
@@ -19,8 +39,6 @@
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-01-20&to=2025-02-21&type=c))
 
 [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-01-20..2025-02-21&type=Issues) | [@KoenGreuell](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3AKoenGreuell+updated%3A2025-01-20..2025-02-21&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.2.1
 
