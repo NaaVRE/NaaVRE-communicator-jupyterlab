@@ -2,6 +2,26 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.2.4
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.3...21b9c3917be42409bee14b6f0e71dd998a5facbc))
+
+### Maintenance and upkeep improvements
+
+- Bump mkdirp from 1.0.4 to 3.0.1 [#22](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/22) ([@dependabot](https://github.com/dependabot))
+- Bump the jupyterlab group with 5 updates [#19](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/19) ([@dependabot](https://github.com/dependabot))
+- Bump pyjwt[crypto] from 2.8.0 to 2.10.1 [#17](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/17) ([@dependabot](https://github.com/dependabot))
+- Bump actions/create-github-app-token from 1 to 2 [#16](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/16) ([@dependabot](https://github.com/dependabot))
+- Add dependabot [#14](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/14) ([@gpelouze](https://github.com/gpelouze))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-04-17&to=2025-06-09&type=c))
+
+[@dependabot](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Adependabot+updated%3A2025-04-17..2025-06-09&type=Issues) | [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-04-17..2025-06-09&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.2.3
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.2...40e391e1724d991d779576ec02c47c8fb30cd137))
@@ -19,8 +39,6 @@
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-02-21&to=2025-04-17&type=c))
 
 [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-02-21..2025-04-17&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.2.2
 
