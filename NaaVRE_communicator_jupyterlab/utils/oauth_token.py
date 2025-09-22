@@ -72,3 +72,12 @@ class OAuthToken:
         if cls._token_needs_renewal(cls._access_token):
             cls._renew_tokens()
         return cls._access_token
+
+    @classmethod
+    def get_user_info(cls):
+        token = cls._parse_token(cls._access_token)
+        return {
+            'sub': token.get('sub'),
+            'preferred_username': token.get('preferred_username'),
+            'name': token.get('name'),
+            }
