@@ -120,6 +120,11 @@ class ExternalServiceHandler(APIHandler):
 
         await self.finish(response)
 
+class MeHandler(APIHandler):
+    @tornado.web.authenticated
+    async def get(self):
+        return self.finish(json.dumps(OAuthToken.get_user_info()))
+
 
 def setup_handlers(web_app):
     host_pattern = ".*$"
@@ -127,6 +132,7 @@ def setup_handlers(web_app):
     base_url = web_app.settings["base_url"]
     handlers = [
         (url_path_join(base_url, "naavre-communicator", "external-service"), ExternalServiceHandler),
+        (url_path_join(base_url, "naavre-communicator", "me"), MeHandler),
         ]
 
     web_app.add_handlers(host_pattern, handlers)
