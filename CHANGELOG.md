@@ -2,6 +2,22 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.3.0
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.4...ca11ec5ee9a4d551e726ed96798aa887bb01b03d))
+
+### Enhancements made
+
+- Add `/me` endpoint [#36](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/36) ([@gpelouze](https://github.com/gpelouze))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-06-09&to=2025-09-22&type=c))
+
+[@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-06-09..2025-09-22&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.2.4
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.3...21b9c3917be42409bee14b6f0e71dd998a5facbc))
@@ -19,8 +35,6 @@
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-04-17&to=2025-06-09&type=c))
 
 [@dependabot](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Adependabot+updated%3A2025-04-17..2025-06-09&type=Issues) | [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-04-17..2025-06-09&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.2.3
 

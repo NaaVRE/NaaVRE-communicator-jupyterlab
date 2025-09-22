@@ -1,6 +1,6 @@
 {
     "name": "@naavre/communicator-jupyterlab",
-    "version": "0.2.4",
+    "version": "0.3.0",
     "description": "Communication gateway for NaaVRE JupyterLab extensions",
     "keywords": [
         "jupyter",
