@@ -57,7 +57,7 @@ jobs:
         pip uninstall -y "NaaVRE_communicator_jupyterlab" jupyterlab
 
     - name: Upload extension packages
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: extension-artifacts
         path: dist/naavre_communicator_jupyterlab*
@@ -143,7 +143,7 @@ jobs:
 
     - name: Upload Playwright Test report
       if: always()
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: NaaVRE_communicator_jupyterlab-playwright-tests
         path: |
