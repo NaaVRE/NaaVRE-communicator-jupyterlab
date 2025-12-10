@@ -2,6 +2,29 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.3.1
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.3.0...68bfc1184986c4270eeeace3f5e0b950ddcec1ab))
+
+### Enhancements made
+
+- Add NaaVREExternalService to js package [#43](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/43) ([@gpelouze](https://github.com/gpelouze))
+
+### Maintenance and upkeep improvements
+
+- Bump actions/checkout from 4 to 6 [#42](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/42) ([@dependabot](https://github.com/dependabot))
+- Bump actions/download-artifact from 4 to 6 [#41](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/41) ([@dependabot](https://github.com/dependabot))
+- Bump actions/upload-artifact from 4 to 5 [#40](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/40) ([@dependabot](https://github.com/dependabot))
+- Bump actions/setup-python from 5 to 6 [#37](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/37) ([@dependabot](https://github.com/dependabot))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-09-22&to=2025-12-10&type=c))
+
+[@dependabot](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Adependabot+updated%3A2025-09-22..2025-12-10&type=Issues) | [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-09-22..2025-12-10&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.3.0
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.2.4...ca11ec5ee9a4d551e726ed96798aa887bb01b03d))
@@ -15,8 +38,6 @@
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-06-09&to=2025-09-22&type=c))
 
 [@gpelouze](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-06-09..2025-09-22&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.2.4
 
