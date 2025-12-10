@@ -2,6 +2,13 @@ import { URLExt } from '@jupyterlab/coreutils';
 
 import { ServerConnection } from '@jupyterlab/services';
 
+export interface INaaVREExternalServiceResponse {
+  status_code: number;
+  reason: string;
+  headers: object;
+  content: string;
+}
+
 /**
  * Call the API extension
  *
@@ -15,11 +22,7 @@ export async function requestAPI<T>(
 ): Promise<T> {
   // Make request to Jupyter API
   const settings = ServerConnection.makeSettings();
-  const requestUrl = URLExt.join(
-    settings.baseUrl,
-    'naavre-communicator', // API Namespace
-    endPoint
-  );
+  const requestUrl = URLExt.join(settings.baseUrl, endPoint);
 
   let response: Response;
   try {
@@ -43,4 +46,34 @@ export async function requestAPI<T>(
   }
 
   return data;
+}
+
+export async function NaaVREExternalService(
+  method: string,
+  url: string,
+  headers = {},
+  data = {}
+): Promise<INaaVREExternalServiceResponse> {
+  const endPoint = 'naavre-communicator/external-service';
+  const init = {
+    method: 'POST',
+    body: JSON.stringify({
+      query: {
+        method: method,
+        url: url,
+        headers: headers,
+        data: data
+      }
+    })
+  };
+
+  const resp: INaaVREExternalServiceResponse = await requestAPI(endPoint, init);
+
+  console.debug('resp', resp);
+  try {
+    console.debug('resp.content', JSON.parse(resp.content));
+  } catch {
+    /* empty */
+  }
+  return resp;
 }
