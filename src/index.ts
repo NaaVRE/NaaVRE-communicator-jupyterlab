@@ -18,3 +18,5 @@ const plugin: JupyterFrontEndPlugin<void> = {
 };
 
 export default plugin;
+
+export { NaaVREExternalService } from './handler';

@@ -61,10 +61,10 @@ class ExternalServiceHandler(APIHandler):
     def _get_query_logger(self):
         if self._naavre_log_queries:
             log_id = self._generate_log_id()
-            def logger(msg):
-                self.log.info(f'NaaVRE-communicator {log_id} {msg}')
+            def logger(msg, data):
+                self.log.info(f'NaaVRE-communicator {log_id} {msg} {json.dumps(data)}')
         else:
-            def logger(msg):
+            def logger(msg, data):
                 pass
         return logger
 
@@ -73,7 +73,7 @@ class ExternalServiceHandler(APIHandler):
         payload = self.get_json_body()
 
         query_logger = self._get_query_logger()
-        query_logger(f'query: {payload}')
+        query_logger('query', payload)
 
         try:
             query = payload['query']
@@ -116,7 +116,7 @@ class ExternalServiceHandler(APIHandler):
             'content': req.text,
             })
 
-        query_logger(f'response: {response}')
+        query_logger('response', response)
 
         await self.finish(response)
 
