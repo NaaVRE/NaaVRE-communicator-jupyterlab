@@ -20,6 +20,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
 export default plugin;
 
 export {
+  INaaVREExternalServiceResponse,
   NaaVREExternalService,
-  INaaVREExternalServiceResponse
+  requestAPI
 } from './handler';
