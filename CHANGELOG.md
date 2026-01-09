@@ -2,6 +2,30 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.3.3
+
+([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.3.2...11f3159f9067282d9b847185a6c533cf37a1ccac))
+
+### Maintenance and upkeep improvements
+
+- Bump js-yaml from 3.14.1 to 3.14.2 [#49](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/49) ([@gpelouze](https://github.com/gpelouze))
+- Bump form-data from 4.0.0 to 4.0.5 [#48](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/48) ([@gpelouze](https://github.com/gpelouze))
+- Bump actions/cache from 4 to 5 [#47](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/47) ([@gpelouze](https://github.com/gpelouze))
+- Bump actions/download-artifact from 6 to 7 [#46](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/46) ([@gpelouze](https://github.com/gpelouze))
+- Bump actions/upload-artifact from 5 to 6 [#45](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/45) ([@gpelouze](https://github.com/gpelouze))
+- Bump the jupyterlab group with 5 updates [#23](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/pull/23) ([@gpelouze](https://github.com/gpelouze))
+
+### Contributors to this release
+
+The following people contributed discussions, new ideas, code and documentation contributions, and review.
+See [our definition of contributors](https://github-activity.readthedocs.io/en/latest/#how-does-this-tool-define-contributions-in-the-reports).
+
+([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-12-17&to=2026-01-09&type=c))
+
+@gpelouze ([activity](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-12-17..2026-01-09&type=Issues))
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.3.2
 
 ([Full Changelog](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/compare/v0.3.1...889c873836578376ff09d393b93ec4c8c20b161c))
@@ -18,8 +42,6 @@ See [our definition of contributors](https://github-activity.readthedocs.io/en/l
 ([GitHub contributors page for this release](https://github.com/NaaVRE/NaaVRE-communicator-jupyterlab/graphs/contributors?from=2025-12-10&to=2025-12-17&type=c))
 
 @gpelouze ([activity](https://github.com/search?q=repo%3ANaaVRE%2FNaaVRE-communicator-jupyterlab+involves%3Agpelouze+updated%3A2025-12-10..2025-12-17&type=Issues))
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.3.1
 
