@@ -5,7 +5,7 @@ bodies = [
     {
         'query': {
             'method': 'GET',
-            'url': 'https://qcdis.github.io/NaaVRE-website/',
+            'url': 'https://naavre.net/',
             'headers': {},
             'data': {},
             }
